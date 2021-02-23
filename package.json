@@ -31,6 +31,7 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
+    "pre-commit": "lint-staged",
     "tsc": "tsc",
     "start": "tsc && node ./dist/index.js",
     "test-dev": "nodemon --watch . --ext ts --exec \"mocha -r ts-node/register __tests__/**/*.test.ts\"",
