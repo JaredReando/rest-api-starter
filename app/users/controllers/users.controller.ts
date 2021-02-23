@@ -42,7 +42,8 @@ export class UsersController {
     async deleteUser(req: express.Request, res: express.Response) {
         const usersService = UsersService.getInstance();
         await usersService.deleteById(req.params.userId);
-        res.status(204).send(``);
+        res.status(204)
+            .send(``);
     }
 
 }
